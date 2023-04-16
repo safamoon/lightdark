@@ -1,0 +1,118 @@
+:root{
+    --bg-color:white;
+    --primarycolor:#101524;
+    --Secendarycolor:red;
+}
+.darkmode{
+    --bg-color:#101524;
+    --primarycolor:white;
+    transition: 0.3s ease;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ol, li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    
+}
+
+body{
+    background-color: var(--bg-color);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.3s ease;
+    cursor: none;
+
+}
+#wrapper{
+    display: flex;
+}
+h2{
+    font-size: 50px;
+    text-transform: capitalize;
+    margin-right: 15px;
+    color: var(--primarycolor);
+    border: 2px solid var(--Secendarycolor);
+   
+}
+button{
+    width: 50px;
+    height: 50px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: 0.10s;
+}
+
+button .sun{
+    background-color:red;
+    border: 2px solid var(--primarycolor);
+ 
+}
+button .sun,
+button .moon{
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 50px;
+    font-size: 25px;
+}
+button .moon{
+    background-color: #101524;
+    color: white;
+    border: 1px solid var(--Secendarycolor);
+
+}
+
+.cursor{
+    width:60px;
+    height: 60px;
+    border: 2px solid var(--Secendarycolor);
+    border-radius: 50px;
+    position: absolute;
+    top:0;
+    left: 0px;
+    transform: translate(-50%, -50%);
+    transition: 0.2s;
+    pointer-events: none;
+
+}
+.cursor_2{
+    width:30px;
+    height: 30px;
+    border: 2px solid var(--primarycolor);
+    border-radius: 50px;
+    position: absolute;
+    top:0;
+    left: 0px;
+    transform: translate(-50%, -50%);
+    transition: 0.2s;
+    pointer-events: none;
+
+}
+.cursor_small{
+    width:10px;
+    height: 10px;
+    background-color: var(--Secendarycolor);
+    border-radius: 50px;
+    position: absolute;
+    top:0;
+    left: 0px;
+    transform: translate(-50%, -50%);
+    transition: 0.2s;
+    pointer-events: none;
+}
+
